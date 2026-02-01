@@ -1,0 +1,29 @@
+{
+  "name": "contacts-management-frontend",
+  "version": "1.0.0",
+  "description": "A clean, modern frontend application for managing contacts built with vanilla JavaScript, HTML, and CSS",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx http-server -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HasmikPoghosyanclasses/contact.management.frontend.git"
+  },
+  "keywords": [
+    "contacts",
+    "frontend",
+    "vanilla-js",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

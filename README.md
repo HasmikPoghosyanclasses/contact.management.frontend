@@ -145,12 +145,22 @@ Click the "Logout" button in the top right corner to sign out.
 ## Project Structure
 
 ```
-Contacts-Management-Frontend/
-├── index.html      # Main HTML file
-├── styles.css      # All styling
-├── app.js          # Application logic and API integration
-└── README.md       # This file
+contact.management.frontend/
+├── index.html              # Main HTML entry point
+├── app.js                  # Application logic and API integration
+├── styles.css              # All styling and responsive design
+├── package.json            # Project metadata and scripts
+├── .gitignore             # Git ignore rules
+├── .editorconfig          # Editor configuration
+├── README.md              # Main documentation
+└── docs/                  # Additional documentation
+    ├── IMPLEMENTATION_STATUS.md
+    ├── REQUIREMENTS_CHECKLIST.md
+    ├── SETUP.md
+    └── PUSH_SUMMARY.md
 ```
+
+See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for detailed structure documentation.
 
 ## API Integration
 
