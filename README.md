@@ -55,18 +55,18 @@ cd Contacts-Management-Frontend
 
 ### Step 2: Configure API URL
 
-Open `app.js` and verify the API base URL matches your backend server:
+Open `js/config.js` and verify the API base URL matches your backend server:
 ```javascript
-const API_BASE_URL = 'http://localhost:3000/api';
+export const API_BASE_URL = 'http://localhost:3000/api';
 ```
 
 **If your backend runs on a different URL or port**, update this constant:
 ```javascript
 // Example for different port
-const API_BASE_URL = 'http://localhost:5000/api';
+export const API_BASE_URL = 'http://localhost:5000/api';
 
 // Example for remote backend
-const API_BASE_URL = 'https://your-backend-domain.com/api';
+export const API_BASE_URL = 'https://your-backend-domain.com/api';
 ```
 
 ### Step 3: Ensure Backend is Running
@@ -147,17 +147,22 @@ Click the "Logout" button in the top right corner to sign out.
 ```
 contact.management.frontend/
 ├── index.html              # Main HTML entry point
-├── app.js                  # Application logic and API integration
 ├── styles.css              # All styling and responsive design
+├── js/                     # JavaScript modules (ES6)
+│   ├── app.js             # Main application entry point
+│   ├── config.js          # API configuration
+│   ├── state.js           # State management
+│   ├── dom.js             # DOM element references
+│   ├── api.js             # API service layer
+│   ├── auth.js            # Authentication logic
+│   ├── contacts.js        # Contact management logic
+│   ├── ui.js              # UI manipulation functions
+│   └── utils.js           # Utility functions
 ├── package.json            # Project metadata and scripts
 ├── .gitignore             # Git ignore rules
 ├── .editorconfig          # Editor configuration
 ├── README.md              # Main documentation
 └── docs/                  # Additional documentation
-    ├── IMPLEMENTATION_STATUS.md
-    ├── REQUIREMENTS_CHECKLIST.md
-    ├── SETUP.md
-    └── PUSH_SUMMARY.md
 ```
 
 See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for detailed structure documentation.
@@ -209,7 +214,7 @@ The frontend communicates with the backend API at `http://localhost:3000/api`. M
 
 ### "Network error" messages
 - Ensure the backend server is running
-- Check that the API URL in `app.js` is correct
+- Check that the API URL in `js/config.js` is correct
 - Verify CORS is enabled on the backend
 
 ### Contacts not loading

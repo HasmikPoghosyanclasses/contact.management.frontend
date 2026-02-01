@@ -7,8 +7,17 @@ This project follows best practices for vanilla JavaScript frontend applications
 ```
 contact.management.frontend/
 ├── index.html              # Main HTML entry point
-├── app.js                  # Application logic and API integration
 ├── styles.css              # All styling and responsive design
+├── js/                     # JavaScript modules (ES6)
+│   ├── app.js             # Main application entry point
+│   ├── config.js          # API configuration
+│   ├── state.js           # State management
+│   ├── dom.js             # DOM element references
+│   ├── api.js             # API service layer
+│   ├── auth.js            # Authentication logic
+│   ├── contacts.js        # Contact management logic
+│   ├── ui.js              # UI manipulation functions
+│   └── utils.js           # Utility functions
 ├── package.json            # Project metadata and scripts
 ├── .gitignore             # Git ignore rules
 ├── .editorconfig          # Editor configuration

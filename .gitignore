@@ -38,3 +38,4 @@ pids
 # Build outputs (if any)
 dist/
 build/
+app.js.old
